@@ -16,6 +16,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(webgpu)
 # Include glfw directory, to define the 'glfw' target
 add_subdirectory(glfw)
+add_subdirectory(glfw3webgpu)
 
 include(binaries/binaries.cmake)
 add_executable(App

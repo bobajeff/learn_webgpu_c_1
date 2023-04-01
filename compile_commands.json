@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
+  "command": "/usr/bin/cc -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/adapter.dir/adapter.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/adapter.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/adapter.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
   "command": "/usr/bin/cc  -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -g -o CMakeFiles/App.dir/main.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/main.c",
   "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/main.c"
 },
@@ -88,5 +93,10 @@
   "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/glfw/src",
   "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/src -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/glfw/src -g -fPIC -Wall -std=gnu99 -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/src/linux_joystick.c",
   "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/src/linux_joystick.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/glfw3webgpu",
+  "command": "/usr/bin/cc -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/glfw3webgpu.dir/glfw3webgpu.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/glfw3webgpu.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/glfw3webgpu.c"
 }
 ]
