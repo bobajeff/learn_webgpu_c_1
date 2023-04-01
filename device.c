@@ -46,7 +46,6 @@ void onDeviceRequestEnded(WGPURequestDeviceStatus status, WGPUDevice device, cha
     if (status == WGPURequestDeviceStatus_Success) {
         userData->device = device;
     } else {
-        // std::cout << "Could not get WebGPU adapter: " << message << std::endl;
         printf( "Could not get WebGPU adapter: %s\n", message);
     }
     userData->requestEnded = true;
@@ -102,14 +101,12 @@ int main(int argc, char *argv[]) {
 
     printf( "Got adapter: %p\n", adapter);
 
-    // std::cout << "Requesting device..." << std::endl;
     printf("Requesting device...\n");
 
     WGPUDeviceDescriptor deviceDesc = {};
     // (We will build the device descriptor here)
     WGPUDevice device = requestDevice(adapter, &deviceDesc);
 
-    // std::cout << "Got device: " << device << std::endl;
     printf( "Got device: %p\n", device);
 
     while (!glfwWindowShouldClose(window)) {
