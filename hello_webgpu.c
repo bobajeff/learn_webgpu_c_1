@@ -15,12 +15,10 @@ int main(int argc, char *argv[]) {
     // 3. We can check whether there is actually an instance created
     if (!instance) {
         fprintf(stderr, "Could not initialize WebGPU!\n");
-        // std::cerr << "Could not initialize WebGPU!" << std::endl;
         return 1;
     }
 
     // 4. Display the object (WGPUInstance is a simple pointer, it may be
     // copied around without worrying about its size).
         printf( "WGPU instance: %p\n", instance);
-    // std::cout << "WGPU instance: " << instance << std::endl;
 }
