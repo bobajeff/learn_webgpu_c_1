@@ -5,10 +5,19 @@ project(
 	LANGUAGES CXX C
 )
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+include(FetchContent)
 
+# fetch webgpu deoendency
+FetchContent_Declare(
+  webgpu
+  GIT_REPOSITORY https://github.com/eliemichel/WebGPU-distribution
+  GIT_TAG        main
+)
+FetchContent_MakeAvailable(webgpu)
 # Include glfw directory, to define the 'glfw' target
 add_subdirectory(glfw)
 
+include(binaries/binaries.cmake)
 add_executable(App
 	main.c
 )
