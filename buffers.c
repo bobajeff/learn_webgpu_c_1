@@ -85,12 +85,12 @@ void onBuffer2Mapped(WGPUBufferMapAsyncStatus status, void* pUserData) {
 
     // [...] (Do stuff with bufferData)
     printf( "bufferData = [");
-    for (unsigned char i = 0; i < 16; ++i) {
+    for (unsigned char i = 0; i < 16; i++) {
         if (i > 0) 
         {
             printf( ",");
-            printf( "%c", bufferData[i]);    //what the c++ version currently does
         }
+         printf( "%hhu", bufferData[i]);    //probably what the c++ version meant to do 😊
     }
     printf(  "]\n");
 
@@ -176,7 +176,7 @@ int main(int argc, char *argv[]) {
 
     // Create some CPU-side data buffer (of size 16 bytes)
     unsigned char numbers[16];
-    for (unsigned char i = 0; i < 16; ++i) numbers[i] = i;
+    for (unsigned char i = 0; i < 16; i++) numbers[i] = i;
 
     // Copy this from `numbers` (RAM) to `buffer1` (VRAM)
     wgpuQueueWriteBuffer(queue, buffer1, 0, numbers, 16);
