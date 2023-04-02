@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <glfw3webgpu.h>
+#include <assert.h>
 
 // A simple structure holding the local information shared with the
 // onAdapterRequestEnded callback.
@@ -32,6 +33,8 @@ WGPUAdapter requestAdapter(WGPUInstance instance, WGPURequestAdapterOptions cons
         onAdapterRequestEnded,
         (void*)&userData
     );
+
+    assert(userData.requestEnded);
 
     return userData.adapter;
 }

@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <glfw3webgpu.h>
+#include <assert.h>
 
 //  ------------------------------- Adapter------------------------------------------------------------------
 struct AdapterUserData {
@@ -32,6 +33,8 @@ WGPUAdapter requestAdapter(WGPUInstance instance, WGPURequestAdapterOptions cons
         onAdapterRequestEnded,
         (void*)&userData
     );
+
+    assert(userData.requestEnded);
 
     return userData.adapter;
 }
@@ -62,6 +65,8 @@ WGPUDevice requestDevice(WGPUAdapter adapter, WGPUDeviceDescriptor const * descr
         onDeviceRequestEnded,
         (void*)&userData
     );
+
+    assert(userData.requestEnded);
 
     return userData.device;
 }
@@ -255,7 +260,7 @@ int main(int argc, char *argv[]) {
         WGPUTextureView nextTexture = wgpuSwapChainGetCurrentTextureView(swapChain);
 
         if (!nextTexture) {
-            printf( "Cannot acquire next swap chain texture\n");
+            fprintf(stderr, "Cannot acquire next swap chain texture\n");
             return 1;
         }
 

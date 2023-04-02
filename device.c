@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <glfw3webgpu.h>
+#include <assert.h>
 
 //  ------------------------------- Adapter------------------------------------------------------------------
 struct AdapterUserData {
@@ -31,6 +32,8 @@ WGPUAdapter requestAdapter(WGPUInstance instance, WGPURequestAdapterOptions cons
         onAdapterRequestEnded,
         (void*)&userData
     );
+
+    assert(userData.requestEnded);
 
     return userData.adapter;
 }
@@ -61,6 +64,8 @@ WGPUDevice requestDevice(WGPUAdapter adapter, WGPUDeviceDescriptor const * descr
         onDeviceRequestEnded,
         (void*)&userData
     );
+
+    assert(userData.requestEnded);
 
     return userData.device;
 }
