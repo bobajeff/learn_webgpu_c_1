@@ -18,3 +18,10 @@ device.c
 )
 target_link_libraries(device PRIVATE glfw webgpu glfw3webgpu)
 target_copy_webgpu_binaries(device)
+
+#---------- COMMAND_QUEUE
+add_executable(command_queue
+command_queue.c
+)
+target_link_libraries(command_queue PRIVATE glfw webgpu glfw3webgpu)
+target_copy_webgpu_binaries(command_queue)
