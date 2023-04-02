@@ -18,11 +18,7 @@ FetchContent_MakeAvailable(webgpu)
 add_subdirectory(glfw)
 add_subdirectory(glfw3webgpu)
 
-include(binaries/binaries.cmake)
-add_executable(App
-	main.c
-)
+include(1_getting_started/binaries.cmake)
+include(2_hello_triangle/binaries.cmake)
 
-# Add the 'glfw' target as a dependency of our App
-target_link_libraries(App PRIVATE glfw)
 
