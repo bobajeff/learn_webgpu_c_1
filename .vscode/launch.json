@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/command_queue",
+            "program": "${workspaceFolder}/build/buffers",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/build/",

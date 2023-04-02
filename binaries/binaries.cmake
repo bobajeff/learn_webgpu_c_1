@@ -25,3 +25,10 @@ command_queue.c
 )
 target_link_libraries(command_queue PRIVATE glfw webgpu glfw3webgpu)
 target_copy_webgpu_binaries(command_queue)
+
+#---------- BUFFERS
+add_executable(buffers
+buffers.c
+)
+target_link_libraries(buffers PRIVATE glfw webgpu glfw3webgpu)
+target_copy_webgpu_binaries(buffers)
