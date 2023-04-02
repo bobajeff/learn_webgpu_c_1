@@ -169,6 +169,11 @@ int main(int argc, char *argv[]) {
 
         renderPassDesc.colorAttachmentCount = 1;
         renderPassDesc.colorAttachments = &renderPassColorAttachment;
+
+        renderPassDesc.depthStencilAttachment = NULL;
+        renderPassDesc.timestampWriteCount = 0;
+        renderPassDesc.timestampWrites = NULL;
+        renderPassDesc.nextInChain = NULL;
         
         WGPURenderPassEncoder renderPass = wgpuCommandEncoderBeginRenderPass(encoder, &renderPassDesc);
         wgpuRenderPassEncoderEnd(renderPass);
