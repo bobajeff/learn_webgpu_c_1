@@ -39,3 +39,10 @@ first_color.c
 )
 target_link_libraries(first_color PRIVATE glfw webgpu glfw3webgpu)
 target_copy_webgpu_binaries(first_color)
+
+#---------- HELLO_TRIANGLE
+add_executable(hello_triangle
+hello_triangle.c
+)
+target_link_libraries(hello_triangle PRIVATE glfw webgpu glfw3webgpu)
+target_copy_webgpu_binaries(hello_triangle)

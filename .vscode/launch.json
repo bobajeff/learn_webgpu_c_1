@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/first_color",
+            "program": "${workspaceFolder}/build/hello_triangle",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/build/",
