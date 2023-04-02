@@ -32,3 +32,10 @@ buffers.c
 )
 target_link_libraries(buffers PRIVATE glfw webgpu glfw3webgpu)
 target_copy_webgpu_binaries(buffers)
+
+#---------- FIRST_COLOR
+add_executable(first_color
+first_color.c
+)
+target_link_libraries(first_color PRIVATE glfw webgpu glfw3webgpu)
+target_copy_webgpu_binaries(first_color)
