@@ -65,7 +65,11 @@ WGPUDevice requestDevice(WGPUAdapter adapter, WGPUDeviceDescriptor const * descr
     return userData.device;
 }
 
-
+void onDeviceError (WGPUErrorType type, char const* message, void* pUserData) {
+    printf( "Uncaptured device error: type (%u)\n", type);
+    if (message)
+    printf( "Could not get WebGPU adapter: (%s)\n", message);
+};
 
 
 int main(int argc, char *argv[]) {
@@ -104,10 +108,17 @@ int main(int argc, char *argv[]) {
     printf("Requesting device...\n");
 
     WGPUDeviceDescriptor deviceDesc = {};
-    // (We will build the device descriptor here)
+    deviceDesc.nextInChain = NULL;
+    deviceDesc.label = "My Device"; // anything works here, that's your call
+    deviceDesc.requiredFeaturesCount = 0; // we do not require any specific feature
+    deviceDesc.requiredLimits = NULL; // we do not require any specific limit
+    deviceDesc.defaultQueue.nextInChain = NULL;
+    deviceDesc.defaultQueue.label = "The default queue";
     WGPUDevice device = requestDevice(adapter, &deviceDesc);
 
     printf( "Got device: %p\n", device);
+    
+    wgpuDeviceSetUncapturedErrorCallback(device, onDeviceError, NULL /* pUserData */);
 
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
