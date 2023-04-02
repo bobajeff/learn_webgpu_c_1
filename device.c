@@ -72,6 +72,54 @@ void onDeviceError (WGPUErrorType type, char const* message, void* pUserData) {
 };
 
 
+void inspectDevice(WGPUDevice device) {
+    WGPUFeatureName * features;
+	size_t featureCount = wgpuDeviceEnumerateFeatures(device, NULL);
+    printf("featureCount:%zu\n", featureCount);
+    
+    features = malloc(featureCount * sizeof(WGPUFeatureName));
+	wgpuDeviceEnumerateFeatures(device, features);
+
+    printf("Device features:\n");
+    for (int i=0; i < featureCount; i++){
+        printf(" - %i\n", features[i]);
+    }
+     free(features);
+
+	WGPUSupportedLimits limits = {};
+	limits.nextInChain = NULL;
+	bool success = wgpuDeviceGetLimits(device, &limits);
+	if (success) {
+		printf("Device limits:\n");
+		printf(" - maxTextureDimension1D: %i\n", limits.limits.maxTextureDimension1D);
+		printf(" - maxTextureDimension2D: %i\n", limits.limits.maxTextureDimension2D);
+		printf(" - maxTextureDimension3D: %i\n", limits.limits.maxTextureDimension3D);
+		printf(" - maxTextureArrayLayers: %i\n", limits.limits.maxTextureArrayLayers);
+		printf(" - maxBindGroups: %i\n", limits.limits.maxBindGroups);
+		printf(" - maxDynamicUniformBuffersPerPipelineLayout: %i\n", limits.limits.maxDynamicUniformBuffersPerPipelineLayout);
+		printf(" - maxDynamicStorageBuffersPerPipelineLayout: %i\n", limits.limits.maxDynamicStorageBuffersPerPipelineLayout);
+		printf(" - maxSampledTexturesPerShaderStage: %i\n", limits.limits.maxSampledTexturesPerShaderStage);
+		printf(" - maxSamplersPerShaderStage: %i\n", limits.limits.maxSamplersPerShaderStage);
+		printf(" - maxStorageBuffersPerShaderStage: %i\n", limits.limits.maxStorageBuffersPerShaderStage);
+		printf(" - maxStorageTexturesPerShaderStage: %i\n", limits.limits.maxStorageTexturesPerShaderStage);
+		printf(" - maxUniformBuffersPerShaderStage: %i\n", limits.limits.maxUniformBuffersPerShaderStage);
+		printf(" - maxUniformBufferBindingSize: %lu\n", limits.limits.maxUniformBufferBindingSize);
+		printf(" - maxStorageBufferBindingSize: %lu\n", limits.limits.maxStorageBufferBindingSize);
+		printf(" - minUniformBufferOffsetAlignment: %i\n", limits.limits.minUniformBufferOffsetAlignment);
+		printf(" - minStorageBufferOffsetAlignment: %i\n", limits.limits.minStorageBufferOffsetAlignment);
+		printf(" - maxVertexBuffers: %i\n", limits.limits.maxVertexBuffers);
+		printf(" - maxVertexAttributes: %i\n", limits.limits.maxVertexAttributes);
+		printf(" - maxVertexBufferArrayStride: %i\n", limits.limits.maxVertexBufferArrayStride);
+		printf(" - maxInterStageShaderComponents: %i\n", limits.limits.maxInterStageShaderComponents);
+		printf(" - maxComputeWorkgroupStorageSize: %i\n", limits.limits.maxComputeWorkgroupStorageSize);
+		printf(" - maxComputeInvocationsPerWorkgroup: %i\n", limits.limits.maxComputeInvocationsPerWorkgroup);
+		printf(" - maxComputeWorkgroupSizeX: %i\n", limits.limits.maxComputeWorkgroupSizeX);
+		printf(" - maxComputeWorkgroupSizeY: %i\n", limits.limits.maxComputeWorkgroupSizeY);
+		printf(" - maxComputeWorkgroupSizeZ: %i\n", limits.limits.maxComputeWorkgroupSizeZ);
+		printf(" - maxComputeWorkgroupsPerDimension: %i\n", limits.limits.maxComputeWorkgroupsPerDimension);
+	}
+}
+
 int main(int argc, char *argv[]) {
     WGPUInstanceDescriptor desc = {};
     desc.nextInChain = NULL;
@@ -119,6 +167,8 @@ int main(int argc, char *argv[]) {
     printf( "Got device: %p\n", device);
     
     wgpuDeviceSetUncapturedErrorCallback(device, onDeviceError, NULL /* pUserData */);
+
+    inspectDevice(device);
 
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
