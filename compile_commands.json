@@ -1,6 +1,11 @@
 [
 {
   "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
+  "command": "/usr/bin/cc -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/helper.dir/helper.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/helper.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/helper.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
   "command": "/usr/bin/cc  -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -g -o CMakeFiles/open_window.dir/1_getting_started/open_window.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/1_getting_started/open_window.c",
   "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/1_getting_started/open_window.c"
 },
@@ -36,8 +41,13 @@
 },
 {
   "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
-  "command": "/usr/bin/cc -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/hello_triangle.dir/hello_triangle.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/hello_triangle.c",
-  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/hello_triangle.c"
+  "command": "/usr/bin/cc -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/hello_triangle.dir/2_hello_triangle/hello_triangle.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/2_hello_triangle/hello_triangle.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/2_hello_triangle/hello_triangle.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
+  "command": "/usr/bin/cc -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/vertex_attribute.dir/3_input_geometry/vertex_attribute.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/3_input_geometry/vertex_attribute.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/3_input_geometry/vertex_attribute.c"
 },
 {
   "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/glfw/src",
