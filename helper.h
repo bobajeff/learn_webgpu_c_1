@@ -27,13 +27,5 @@ void onDeviceError (WGPUErrorType type, char const* message, void* pUserData);
 
 void setDefault(WGPULimits *limits);
 
-void myCallback(WGPUErrorType type, char const* message);
-
-struct Context {
-    void (*theCallback) (WGPUErrorType, char const*);
-};
-
-static struct Context ctx = { myCallback };
-
 void cCallback(WGPUErrorType type, char const* message, void* userdata);
 #endif

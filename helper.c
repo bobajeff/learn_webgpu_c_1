@@ -66,44 +66,41 @@ void onDeviceError (WGPUErrorType type, char const* message, void* pUserData) {
 };
 
 void setDefault(WGPULimits *limits) {
-	limits->maxTextureDimension1D = 0;
-	limits->maxTextureDimension2D = 0;
-	limits->maxTextureDimension3D = 0;
-	limits->maxTextureArrayLayers = 0;
-	limits->maxBindGroups = 0;
-	limits->maxDynamicUniformBuffersPerPipelineLayout = 0;
-	limits->maxDynamicStorageBuffersPerPipelineLayout = 0;
-	limits->maxSampledTexturesPerShaderStage = 0;
-	limits->maxSamplersPerShaderStage = 0;
-	limits->maxStorageBuffersPerShaderStage = 0;
-	limits->maxStorageTexturesPerShaderStage = 0;
-	limits->maxUniformBuffersPerShaderStage = 0;
-	limits->maxUniformBufferBindingSize = 0;
-	limits->maxStorageBufferBindingSize = 0;
-	limits->minUniformBufferOffsetAlignment = 0;
-	limits->minStorageBufferOffsetAlignment = 0;
-	limits->maxVertexBuffers = 0;
-	limits->maxVertexAttributes = 0;
-	limits->maxVertexBufferArrayStride = 0;
-	limits->maxInterStageShaderComponents = 0;
-	limits->maxComputeWorkgroupStorageSize = 0;
-	limits->maxComputeInvocationsPerWorkgroup = 0;
-	limits->maxComputeWorkgroupSizeX = 0;
-	limits->maxComputeWorkgroupSizeY = 0;
-	limits->maxComputeWorkgroupSizeZ = 0;
-	limits->maxComputeWorkgroupsPerDimension = 0;
-	limits->maxBufferSize = 0;
+    limits->maxTextureDimension1D = 0;
+    limits->maxTextureDimension2D = 0;
+    limits->maxTextureDimension3D = 0;
+    limits->maxTextureArrayLayers = 0;
+    limits->maxBindGroups = 0;
+    limits->maxBindingsPerBindGroup = 0;
+    limits->maxDynamicUniformBuffersPerPipelineLayout = 0;
+    limits->maxDynamicStorageBuffersPerPipelineLayout = 0;
+    limits->maxSampledTexturesPerShaderStage = 0;
+    limits->maxSamplersPerShaderStage = 0;
+    limits->maxStorageBuffersPerShaderStage = 0;
+    limits->maxStorageTexturesPerShaderStage = 0;
+    limits->maxUniformBuffersPerShaderStage = 0;
+    limits->maxUniformBufferBindingSize = 0;
+    limits->maxStorageBufferBindingSize = 0;
+    limits->minUniformBufferOffsetAlignment = 0;
+    limits->minStorageBufferOffsetAlignment = 0;
+    limits->maxVertexBuffers = 0;
+    limits->maxBufferSize = 0;
+    limits->maxVertexAttributes = 0;
+    limits->maxVertexBufferArrayStride = 0;
+    limits->maxInterStageShaderComponents = 0;
+    limits->maxInterStageShaderVariables = 0;
+    limits->maxColorAttachments = 0;
+    limits->maxColorAttachmentBytesPerSample = 0;
+    limits->maxComputeWorkgroupStorageSize = 0;
+    limits->maxComputeInvocationsPerWorkgroup = 0;
+    limits->maxComputeWorkgroupSizeX = 0;
+    limits->maxComputeWorkgroupSizeY = 0;
+    limits->maxComputeWorkgroupSizeZ = 0;
+    limits->maxComputeWorkgroupsPerDimension = 0;
 }
 
-void myCallback(WGPUErrorType type, char const* message) {
-    // std::cout << "Device error: type " << type;
-    printf( "Device error: type  (%u)\n", type);
+void cCallback(WGPUErrorType type, char const* message, void* userdata) {
+	printf( "Device error: type  (%u)\n", type);
     if (message)
     printf( "message: (%s)\n", message);
-};
-
-
-void cCallback(WGPUErrorType type, char const* message, void* userdata) {
-    ctx = *(struct Context *)(userdata);
-    ctx.theCallback((WGPUErrorType)(type), message);
 };
