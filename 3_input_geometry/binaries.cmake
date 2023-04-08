@@ -5,9 +5,16 @@ add_executable(vertex_attribute
 target_link_libraries(vertex_attribute PRIVATE glfw webgpu glfw3webgpu helper)
 target_copy_webgpu_binaries(vertex_attribute)
 
-#---------- MULTIPLE ATTRIBUTES
-add_executable(multiple_attributes
-3_input_geometry/multiple_attributes.c
+#---------- MULTIPLE ATTRIBUTES (A)
+add_executable(multiple_attributes_a
+3_input_geometry/multiple_attributes_a.c
 )
-target_link_libraries(multiple_attributes PRIVATE glfw webgpu glfw3webgpu helper)
-target_copy_webgpu_binaries(multiple_attributes)
+target_link_libraries(multiple_attributes_a PRIVATE glfw webgpu glfw3webgpu helper)
+target_copy_webgpu_binaries(multiple_attributes_a)
+
+#---------- MULTIPLE ATTRIBUTES (B)
+add_executable(multiple_attributes_b
+3_input_geometry/multiple_attributes_b.c
+)
+target_link_libraries(multiple_attributes_b PRIVATE glfw webgpu glfw3webgpu helper)
+target_copy_webgpu_binaries(multiple_attributes_b)
