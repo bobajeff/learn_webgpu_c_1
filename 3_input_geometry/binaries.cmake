@@ -18,3 +18,10 @@ add_executable(multiple_attributes_b
 )
 target_link_libraries(multiple_attributes_b PRIVATE glfw webgpu glfw3webgpu helper)
 target_copy_webgpu_binaries(multiple_attributes_b)
+
+#---------- INDEX_BUFFER
+add_executable(index_buffer
+3_input_geometry/index_buffer.c
+)
+target_link_libraries(index_buffer PRIVATE glfw webgpu glfw3webgpu helper)
+target_copy_webgpu_binaries(index_buffer)
