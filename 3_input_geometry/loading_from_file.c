@@ -50,7 +50,11 @@ bool loadGeometry(const char * path, t_geometry_data * geometry_data) {
     int pointcount = 0;
     int indexcount = 0;
     FILE *f = fopen(path, "rt");
-    assert(f);
+    // assert(f);
+	if (!f){
+		printf("can't open file:\n %s\n", path);
+		return false;
+	}
 
 	enum Section {
 		None,
@@ -91,6 +95,7 @@ bool loadGeometry(const char * path, t_geometry_data * geometry_data) {
                 tmp = realloc(geometry_data->pointData, geometry_data->pointDataSize + (sizeof(float)));
                 if (!tmp) {
                     printf("Memory Re-allocation failed.\n");
+					return false;
                 } else {
                     geometry_data->pointData = tmp;
                     geometry_data->pointData[pointcount] = value;
@@ -118,6 +123,7 @@ bool loadGeometry(const char * path, t_geometry_data * geometry_data) {
                 tmp = realloc(geometry_data->indexData, geometry_data->pointDataSize + sizeof(uint16_t));
                 if (!tmp) {
                     printf("Memory Re-allocation failed.");
+					return false;
                 } else {
                     geometry_data->indexData = tmp;
                 }
