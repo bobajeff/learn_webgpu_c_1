@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/index_buffer",
+            "program": "${workspaceFolder}/build/loading_from_file",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/build/",

@@ -25,3 +25,10 @@ add_executable(index_buffer
 )
 target_link_libraries(index_buffer PRIVATE glfw webgpu glfw3webgpu helper)
 target_copy_webgpu_binaries(index_buffer)
+
+#---------- LOADING_FROM_FILE
+add_executable(loading_from_file
+3_input_geometry/loading_from_file.c
+)
+target_link_libraries(loading_from_file PRIVATE glfw webgpu glfw3webgpu helper)
+target_copy_webgpu_binaries(loading_from_file)
