@@ -181,7 +181,7 @@ int main(int argc, char *argv[]) {
     requiredLimits.limits.minUniformBufferOffsetAlignment = 64;
     requiredLimits.limits.minStorageBufferOffsetAlignment = 32;
     requiredLimits.limits.maxVertexBufferArrayStride = 20;
-    requiredLimits.limits.maxBufferSize = 120;
+    requiredLimits.limits.maxBufferSize = 300;
 	// this has to be set to 3 or I get
 	// message: (Stage { stage: VERTEX, error: TooManyVaryings { used: 3, limit: 0 }
 	requiredLimits.limits.maxInterStageShaderComponents = 3;
@@ -300,7 +300,7 @@ int main(int argc, char *argv[]) {
 	size_t indexDataSize = geometrydata.indexDataSize;
 
 	// Create vertex buffer
-	WGPUBufferDescriptor bufferDesc;
+	WGPUBufferDescriptor bufferDesc = {};
 	// bufferDesc.size = sizeof pointData;
 	bufferDesc.size = pointDataSize;
 	bufferDesc.usage = WGPUBufferUsage_CopyDst | WGPUBufferUsage_Vertex;
@@ -312,11 +312,17 @@ int main(int argc, char *argv[]) {
 
 	// Create index buffer
 	// (we reuse the bufferDesc initialized for the vertexBuffer)
-	bufferDesc.size = indexDataSize;
+	// bufferDesc.size has to be indexCount × sizeof(float) or I get UnalignedBufferOffset(30) 
+	// Not sure why. I'll have to look into it
+	bufferDesc.size = indexCount * sizeof(float); 
 	bufferDesc.usage = WGPUBufferUsage_CopyDst | WGPUBufferUsage_Index;
 	bufferDesc.mappedAtCreation = false;
 	WGPUBuffer indexBuffer = wgpuDeviceCreateBuffer(device, &bufferDesc);
 	wgpuQueueWriteBuffer(queue, indexBuffer, 0, indexData, bufferDesc.size);
+
+	//cleanup memory
+	free(indexData);
+	free(pointData);
 
 	while (!glfwWindowShouldClose(window)) {
 		glfwPollEvents();
