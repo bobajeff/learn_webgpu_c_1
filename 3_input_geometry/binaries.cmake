@@ -30,5 +30,8 @@ target_copy_webgpu_binaries(index_buffer)
 add_executable(loading_from_file
 3_input_geometry/loading_from_file.c
 )
+target_compile_definitions(loading_from_file PRIVATE
+    RESOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}/3_input_geometry/resources"
+)
 target_link_libraries(loading_from_file PRIVATE glfw webgpu glfw3webgpu helper)
 target_copy_webgpu_binaries(loading_from_file)

@@ -210,7 +210,7 @@ int main(int argc, char *argv[]) {
 	WGPUSwapChain swapChain = wgpuDeviceCreateSwapChain(device, surface, &swapChainDesc);
 	printf( "Swapchain: %p\n", swapChain);
 
-	WGPUShaderModule shaderModule = loadShaderModule("/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/3_input_geometry/resources/shader.wsl", device);
+	WGPUShaderModule shaderModule = loadShaderModule(RESOURCE_DIR "/shader.wsl", device);
 	printf( "Shader module: %p\n", shaderModule);
 
 	printf( "Creating render pipeline...\n");
@@ -288,7 +288,7 @@ int main(int argc, char *argv[]) {
 	WGPURenderPipeline pipeline = wgpuDeviceCreateRenderPipeline(device, &pipelineDesc);
 	printf( "Render pipeline: %p\n", pipeline);
 	struct GeometryData geometrydata = {malloc(sizeof(float)), 0, malloc(sizeof(size_t)), 0};
-	bool success = loadGeometry("/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/3_input_geometry/resources/webgpu.txt", &geometrydata);
+	bool success = loadGeometry(RESOURCE_DIR "/webgpu.txt", &geometrydata);
 		if (!success) {
 		fprintf(stderr, "Could not load geometry!\n");
 		return 1;
