@@ -22,3 +22,13 @@ target_compile_definitions(more_uniforms PRIVATE
 )
 target_link_libraries(more_uniforms PRIVATE glfw webgpu glfw3webgpu helper_v2)
 target_copy_webgpu_binaries(more_uniforms)
+
+#---------- DYNAMIC_UNIFORMS
+add_executable(dynamic_uniforms
+4_uniforms/dynamic_uniforms.c
+)
+target_compile_definitions(dynamic_uniforms PRIVATE
+    RESOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}/4_uniforms/resources"
+)
+target_link_libraries(dynamic_uniforms PRIVATE glfw webgpu glfw3webgpu helper_v2)
+target_copy_webgpu_binaries(dynamic_uniforms)
