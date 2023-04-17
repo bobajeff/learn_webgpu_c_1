@@ -1,0 +1,14 @@
+#---------- HELPER V2
+add_library(helper_v2 4_uniforms/helper_v2.c)
+target_include_directories(helper_v2 PUBLIC ${CMAKE_SOURCE_DIR}/3_input_geometry)
+target_link_libraries(helper_v2 PRIVATE webgpu)
+
+#---------- A_FIRST_UNIFORM
+add_executable(a_first_uniform
+4_uniforms/a_first_uniform.c
+)
+target_compile_definitions(a_first_uniform PRIVATE
+    RESOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}/4_uniforms/resources"
+)
+target_link_libraries(a_first_uniform PRIVATE glfw webgpu glfw3webgpu helper_v2)
+target_copy_webgpu_binaries(a_first_uniform)

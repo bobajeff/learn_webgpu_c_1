@@ -25,5 +25,6 @@ target_link_libraries(helper PRIVATE webgpu)
 include(1_getting_started/binaries.cmake)
 include(2_hello_triangle/binaries.cmake)
 include(3_input_geometry/binaries.cmake)
+include(4_uniforms/binaries.cmake)
 
 

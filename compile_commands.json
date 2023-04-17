@@ -70,6 +70,11 @@
   "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/3_input_geometry/loading_from_file.c"
 },
 {
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
+  "command": "/usr/bin/cc -DRESOURCE_DIR=\\\"/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/resources\\\" -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/a_first_uniform.dir/4_uniforms/a_first_uniform.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/a_first_uniform.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/a_first_uniform.c"
+},
+{
   "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/glfw/src",
   "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/src -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/glfw/src -g -fPIC -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles/glfw.dir/context.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/src/context.c",
   "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/src/context.c"
