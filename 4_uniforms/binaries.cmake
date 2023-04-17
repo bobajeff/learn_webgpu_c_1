@@ -12,3 +12,13 @@ target_compile_definitions(a_first_uniform PRIVATE
 )
 target_link_libraries(a_first_uniform PRIVATE glfw webgpu glfw3webgpu helper_v2)
 target_copy_webgpu_binaries(a_first_uniform)
+
+#---------- MORE_UNIFORMS
+add_executable(more_uniforms
+4_uniforms/more_uniforms.c
+)
+target_compile_definitions(more_uniforms PRIVATE
+    RESOURCE_DIR="${CMAKE_CURRENT_SOURCE_DIR}/4_uniforms/resources"
+)
+target_link_libraries(more_uniforms PRIVATE glfw webgpu glfw3webgpu helper_v2)
+target_copy_webgpu_binaries(more_uniforms)
