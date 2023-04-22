@@ -27,37 +27,37 @@ WGPUDevice requestDevice(WGPUAdapter adapter, WGPUDeviceDescriptor const * descr
 void onDeviceError (WGPUErrorType type, char const* message, void* pUserData);
 
 static const WGPULimits DEFAULT_WGPU_LIMITS = {
-        .maxTextureDimension1D = 1,
-        .maxTextureDimension2D = 1,
-        .maxTextureDimension3D = 1,
-        .maxTextureArrayLayers = 1,
-        .maxBindGroups = 1,
-        .maxBindingsPerBindGroup = 1,
-        .maxDynamicUniformBuffersPerPipelineLayout = 1,
-        .maxDynamicStorageBuffersPerPipelineLayout = 1,
-        .maxSampledTexturesPerShaderStage = 1,
-        .maxSamplersPerShaderStage = 1,
-        .maxStorageBuffersPerShaderStage = 1,
-        .maxStorageTexturesPerShaderStage = 1,
-        .maxUniformBuffersPerShaderStage = 1,
-        .maxUniformBufferBindingSize = 1,
-        .maxStorageBufferBindingSize = 1,
-        .minUniformBufferOffsetAlignment = 1,
-        .minStorageBufferOffsetAlignment = 1,
-        .maxVertexBuffers = 1,
-        .maxBufferSize = 1,
-        .maxVertexAttributes = 1,
-        .maxVertexBufferArrayStride = 1,
-        .maxInterStageShaderComponents = 1,
-        .maxInterStageShaderVariables = 1,
-        .maxColorAttachments = 1,
-        .maxColorAttachmentBytesPerSample = 1,
-        .maxComputeWorkgroupStorageSize = 1,
-        .maxComputeInvocationsPerWorkgroup = 1,
-        .maxComputeWorkgroupSizeX = 1,
-        .maxComputeWorkgroupSizeY = 1,
-        .maxComputeWorkgroupSizeZ = 1,
-        .maxComputeWorkgroupsPerDimension = 1
+        .maxTextureDimension1D = 0,
+        .maxTextureDimension2D = 0,
+        .maxTextureDimension3D = 0,
+        .maxTextureArrayLayers = 0,
+        .maxBindGroups = 0,
+        .maxBindingsPerBindGroup = 0,
+        .maxDynamicUniformBuffersPerPipelineLayout = 0,
+        .maxDynamicStorageBuffersPerPipelineLayout = 0,
+        .maxSampledTexturesPerShaderStage = 0,
+        .maxSamplersPerShaderStage = 0,
+        .maxStorageBuffersPerShaderStage = 0,
+        .maxStorageTexturesPerShaderStage = 0,
+        .maxUniformBuffersPerShaderStage = 0,
+        .maxUniformBufferBindingSize = 0,
+        .maxStorageBufferBindingSize = 0,
+        .minUniformBufferOffsetAlignment = 0,
+        .minStorageBufferOffsetAlignment = 0,
+        .maxVertexBuffers = 0,
+        .maxBufferSize = 0,
+        .maxVertexAttributes = 0,
+        .maxVertexBufferArrayStride = 0,
+        .maxInterStageShaderComponents = 0,
+        .maxInterStageShaderVariables = 0,
+        .maxColorAttachments = 0,
+        .maxColorAttachmentBytesPerSample = 0,
+        .maxComputeWorkgroupStorageSize = 0,
+        .maxComputeInvocationsPerWorkgroup = 0,
+        .maxComputeWorkgroupSizeX = 0,
+        .maxComputeWorkgroupSizeY = 0,
+        .maxComputeWorkgroupSizeZ = 0,
+        .maxComputeWorkgroupsPerDimension = 0
 };
 
 void cCallback(WGPUErrorType type, char const* message, void* userdata);
@@ -99,6 +99,29 @@ static const WGPUBindGroupLayoutEntry BIND_GROUP_DEFAULT = {
 		.viewDimension = WGPUTextureViewDimension_Undefined	
 	},
 	.visibility = WGPUShaderStage_None,
+};
+
+static const WGPUDepthStencilState DEFAULT_DEPTH_STENCIL = {
+    .format = WGPUTextureFormat_Undefined,
+    .depthWriteEnabled = false,
+    .depthCompare = WGPUCompareFunction_Always,
+    .stencilReadMask = 0xFFFFFFFF,
+    .stencilWriteMask = 0xFFFFFFFF,
+    .depthBias = 0,
+    .depthBiasSlopeScale = 0,
+    .depthBiasClamp = 0,
+    .stencilFront = (WGPUStencilFaceState){
+        .compare = WGPUCompareFunction_Always,
+        .failOp = WGPUStencilOperation_Keep,
+        .depthFailOp = WGPUStencilOperation_Keep,
+        .passOp = WGPUStencilOperation_Keep
+    },
+    .stencilBack = (WGPUStencilFaceState){
+        .compare = WGPUCompareFunction_Always,
+        .failOp = WGPUStencilOperation_Keep,
+        .depthFailOp = WGPUStencilOperation_Keep,
+        .passOp = WGPUStencilOperation_Keep
+    }
 };
 
 #endif

@@ -17,6 +17,7 @@ FetchContent_MakeAvailable(webgpu)
 # Include glfw directory, to define the 'glfw' target
 add_subdirectory(glfw)
 add_subdirectory(glfw3webgpu)
+add_subdirectory(cglm)
 
 add_library(helper helper.c)
 target_include_directories(helper PUBLIC ${CMAKE_SOURCE_DIR})
@@ -26,5 +27,6 @@ include(1_getting_started/binaries.cmake)
 include(2_hello_triangle/binaries.cmake)
 include(3_input_geometry/binaries.cmake)
 include(4_uniforms/binaries.cmake)
+include(5_3d_meshes/binaries.cmake)
 
 

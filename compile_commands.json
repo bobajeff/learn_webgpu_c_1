@@ -71,8 +71,43 @@
 },
 {
   "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
-  "command": "/usr/bin/cc -DRESOURCE_DIR=\\\"/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/resources\\\" -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/a_first_uniform.dir/4_uniforms/a_first_uniform.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/a_first_uniform.c",
+  "command": "/usr/bin/cc -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/3_input_geometry -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/helper_v2.dir/4_uniforms/helper_v2.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/helper_v2.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/helper_v2.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
+  "command": "/usr/bin/cc -DRESOURCE_DIR=\\\"/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/resources\\\" -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/3_input_geometry -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/a_first_uniform.dir/4_uniforms/a_first_uniform.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/a_first_uniform.c",
   "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/a_first_uniform.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
+  "command": "/usr/bin/cc -DRESOURCE_DIR=\\\"/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/resources\\\" -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/3_input_geometry -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/more_uniforms.dir/4_uniforms/more_uniforms.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/more_uniforms.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/more_uniforms.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
+  "command": "/usr/bin/cc -DRESOURCE_DIR=\\\"/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/resources\\\" -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/3_input_geometry -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/dynamic_uniforms.dir/4_uniforms/dynamic_uniforms.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/dynamic_uniforms.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/4_uniforms/dynamic_uniforms.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
+  "command": "/usr/bin/cc -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/helper_v3.dir/5_3d_meshes/helper_v3.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes/helper_v3.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes/helper_v3.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
+  "command": "/usr/bin/cc -DRESOURCE_DIR=\\\"/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes/resources\\\" -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/a_simple_example.dir/5_3d_meshes/a_simple_example.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes/a_simple_example.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes/a_simple_example.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
+  "command": "/usr/bin/cc -DRESOURCE_DIR=\\\"/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes/resources\\\" -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/depth_buffer.dir/5_3d_meshes/depth_buffer.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes/depth_buffer.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes/depth_buffer.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build",
+  "command": "/usr/bin/cc -DRESOURCE_DIR=\\\"/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes/resources\\\" -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/transformation_matrices.dir/5_3d_meshes/transformation_matrices.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes/transformation_matrices.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/5_3d_meshes/transformation_matrices.c"
 },
 {
   "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/glfw/src",
@@ -158,5 +193,195 @@
   "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/glfw3webgpu",
   "command": "/usr/bin/cc -DWEBGPU_BACKEND_WGPU -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/. -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw/include -isystem /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/_deps/webgpu-backend-wgpu-src/include -g -o CMakeFiles/glfw3webgpu.dir/glfw3webgpu.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/glfw3webgpu.c",
   "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/glfw3webgpu/glfw3webgpu.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/euler.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/euler.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/euler.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/affine.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/affine.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/affine.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/io.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/io.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/io.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/quat.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/quat.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/quat.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/cam.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/cam.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/cam.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/vec2.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/vec2.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/vec2.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/ivec2.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/ivec2.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/ivec2.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/vec3.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/vec3.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/vec3.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/ivec3.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/ivec3.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/ivec3.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/vec4.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/vec4.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/vec4.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/ivec4.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/ivec4.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/ivec4.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/mat2.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/mat2.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/mat2.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/mat3.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/mat3.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/mat3.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/mat4.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/mat4.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/mat4.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/plane.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/plane.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/plane.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/frustum.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/frustum.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/frustum.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/box.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/box.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/box.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/project.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/project.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/project.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/sphere.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/sphere.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/sphere.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/ease.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/ease.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/ease.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/curve.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/curve.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/curve.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/bezier.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/bezier.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/bezier.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/ray.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/ray.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/ray.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/affine2d.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/affine2d.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/affine2d.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/ortho_lh_no.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/ortho_lh_no.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/ortho_lh_no.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/ortho_lh_zo.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/ortho_lh_zo.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/ortho_lh_zo.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/ortho_rh_no.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/ortho_rh_no.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/ortho_rh_no.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/ortho_rh_zo.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/ortho_rh_zo.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/ortho_rh_zo.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/persp_lh_no.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/persp_lh_no.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/persp_lh_no.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/persp_lh_zo.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/persp_lh_zo.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/persp_lh_zo.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/persp_rh_no.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/persp_rh_no.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/persp_rh_no.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/persp_rh_zo.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/persp_rh_zo.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/persp_rh_zo.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/view_lh_no.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/view_lh_no.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/view_lh_no.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/view_lh_zo.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/view_lh_zo.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/view_lh_zo.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/view_rh_no.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/view_rh_no.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/view_rh_no.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/view_rh_zo.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/view_rh_zo.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/view_rh_zo.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/project_no.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/project_no.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/project_no.c"
+},
+{
+  "directory": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/build/cglm",
+  "command": "/usr/bin/cc -DCGLM_EXPORTS -Dcglm_EXPORTS -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/include -I/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src -g -fPIC -Wall -Werror -O3 -std=gnu11 -o CMakeFiles/cglm.dir/src/clipspace/project_zo.c.o -c /home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/project_zo.c",
+  "file": "/home/bobajeff/projects/webgpu_native_exp/learn_webgpu_c/cglm/src/clipspace/project_zo.c"
 }
 ]
